@@ -65,8 +65,14 @@ header div:hover #busca{
 
 .md-24 { 
     font-size: 36px;
-    color: royalblue;
+    color: #FFFFFF;
+    background-color: royalblue;
+    border-radius: 50px;
+    padding: 10px;
+    position: fixed;
+    right: 68px;
     margin-left: 8px;
+    cursor: pointer;
 }
 
 #busca{
@@ -77,16 +83,17 @@ header div:hover #busca{
     opacity: 0;
     border: 0;
     color: royalblue;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     outline: 0;
     transition: opacity 0.5 linear;
 }
 
 .card{
-    width: 95%;
+    width: 80%;
     height: 80%;
     background-color: #FFFFFF;
     margin: auto;
+    padding: 22px;
     font-family: 'Inconsolata', monospace;
     border-radius: 12px;
     box-shadow: 5px 5px 10px #00000027;
@@ -99,8 +106,9 @@ header div:hover #busca{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 25px;
-    animation: animacard 0.8s linear forwards;
+    animation: animacard 1.5s linear forwards;
 }
+
 
 .card-item div{
     align-self: flex-start;
@@ -109,7 +117,7 @@ header div:hover #busca{
 
 #imgClima{
     width: 400px;
-    align-self: center;
+    align-self: flex-start;
     border-radius: 15px;
 }
 
@@ -127,10 +135,6 @@ header div:hover #busca{
     margin-top: 22px;
 }
 
-#date{
-    font-size: 1.8rem;
-}
-
 #hours{
     font-size: 3.8rem;
 }
@@ -146,11 +150,16 @@ header div:hover #busca{
 }
 
 
-#icons-graus{
+#min{
     font-size: 2.8rem;
     color: royalblue;
     margin-left: 6px;
+}
 
+#max{
+    font-size: 2.8rem;
+    color: royalblue;
+    margin-left: 6px;
 }
 
 .icons-weather{
