@@ -1,170 +1,150 @@
 html{
     font-size: 62,35%;
-}
-
-body{
-    width: 100vw;
-    height: 100vh;
-    background: url('https://i.pinimg.com/originals/96/91/ba/9691ba098c800a1e467ae564c8856cf2.jpg') no-repeat;
-    background-position: center;
-    background-size: 100%;
-    overflow: hidden;
-}   
-
-.container{
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(8px);
-}
-
-section{
-    width: 95vw;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
     width: 100%;
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    border-bottom: 2px solid whitesmoke;
-    
+    padding: 6px 26px;
+    border-bottom: 1.5px solid #00000030;
 }
 
-#logo{
-    font-size: 2.2rem;
-    font-family: 'Inconsolata', monospace;
-    color: #FFFFFF;
+#home{
+    text-decoration: none;
+    outline: none;
+    color: royalblue;
+    font-size: 1.8rem;
 }
 
 header div{
-    width: 86px;
-    height: 60px;
-    background-color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    margin-right: 15px;
+    width: 320px;
+    height: 45px;
+    padding: 2px 2px 2px 15px;
+    background-color: #FFFFFF;
+    border: 2px solid royalblue;
     border-radius: 50px;
-    transition: width 0.5s linear;
 }
 
-header div:hover{
-    width: 335px;
+#nameCity{
+    margin-right: 12px;
+    border: none;
+    font-size: 1.0rem;
+    padding-left: 6px;
+    outline: none;
 }
 
-header div:hover #busca{
-    opacity: 1;
-}
-
-.md-24 { 
-    font-size: 36px;
-    color: #FFFFFF;
+#search{
     background-color: royalblue;
+    padding: 6px 15px;
     border-radius: 50px;
-    padding: 10px;
-    position: fixed;
-    right: 68px;
-    margin-left: 8px;
+    color: #FFFFFF;
     cursor: pointer;
+
 }
 
-#busca{
-    width: 0px;
-    height: 32px;
-    padding: 6px;
-    flex-grow: 1;
-    opacity: 0;
-    border: 0;
-    color: royalblue;
-    font-size: 1.2rem;
-    outline: 0;
-    transition: opacity 0.5 linear;
+#search:active{
+    padding: 5px 14px;
+    background-color: steelblue;
 }
 
-.card{
-    width: 80%;
-    height: 80%;
-    background-color: #FFFFFF;
-    margin: auto;
-    padding: 22px;
-    font-family: 'Inconsolata', monospace;
-    border-radius: 12px;
-    box-shadow: 5px 5px 10px #00000027;
-}
-
-.card-item{
-    width: 100%;
-    height: 100%;
+main{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    margin-top: 25px;
-    animation: animacard 1.5s linear forwards;
+    height: 560px;
+    margin: 15px;
+    padding: 40px;    
 }
 
-
-.card-item div{
-    align-self: flex-start;
+.info{
+    flex-grow: 1;
+    flex-basis: 380px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
 }
 
+.info img{
+    max-width: 100%;
+    margin-bottom: 32px;
+}
 
-#imgClima{
-    width: 400px;
-    align-self: flex-start;
-    border-radius: 15px;
+.card-weather{
+    flex-grow: 1;
+    flex-basis: 380px;
+    max-height: 470px;
+    margin-left: 26px;
+    border-radius: 12px;
+    border: 1px solid rgba(55, 55, 55, 0.2);
+    box-shadow: 2px 2px 8px rgba(55, 55, 55, 0.2),
+                -2px -2px 8px rgba(55, 55, 55, 0.2);
+}
+
+.card-anima{
+    opacity: 0;
+    animation: animacard 1s linear forwards;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-img{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.card-weather h4{
+    margin: 8px 12px;
+    font-size: 0.8rem;
+}
+
+.card-img img{
+    max-width: 260px;
+    margin: 8px 12px;
+}
+
+.card-graus{
+    margin-right: 24px;
 }
 
 #graus{
+    font-size: 8.4rem;
     color: royalblue;
-    font-size: 9.4rem;
 }
 
-#description{
-    font-size: 1.8rem;
-}
-
-#city{
-    font-size: 2.8rem;
-    margin-top: 22px;
-}
-
-#hours{
-    font-size: 3.8rem;
-}
-
-.icon-container{
+.card-max-min{
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 12px;
+    margin: 32px 32px;
 }
 
-.icon-container p{
-    font-size: 1.8rem;
-}
-
-
-#min{
-    font-size: 2.8rem;
-    color: royalblue;
-    margin-left: 6px;
+.card-max-min span{
+    font-size: 1.6rem;
 }
 
 #max{
-    font-size: 2.8rem;
     color: royalblue;
+    font-size: 2.2rem;
     margin-left: 6px;
 }
 
-.icons-weather{
-    width: 64px;
-    border-radius: 12px;
+#min{
+    color: royalblue;
+    font-size: 2.2rem;
+    margin-left: 6px;
+}
+
+.card-max-min img{
+    width: 76px;
 }
 
 
@@ -177,5 +157,44 @@ header div:hover #busca{
     to{
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1073px){
+    .card-weather{
+        margin: 25px 0px;
+    }
+}
+
+@media (max-width: 675px){
+    html{
+        font-size: 80%;
+    }
+
+    .card-weather{
+        flex-grow: 1;
+        max-height: 1250px;
+    }
+
+    .card-graus{
+        width: 100%;    
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #search{
+        padding: 10px 15px;
     }
 }

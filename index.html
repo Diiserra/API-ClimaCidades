@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="styleshee">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Clima Brasil</title>
 </head>
 <body>
-    <div class="container">
-        <section>
-            <header>
-                <h1 id="logo">ClimaBrasil</h1>
-                <div><input id="busca" type="text" placeholder="Buscar cidade"><i class="material-icons md-24">search</i></div>
-            </header>
-            <div class="card">
-                <div class="card-item">
-                    <img id="imgClima" src="" alt="imagem inlustrativa">
-                    <div>
-                        <h1 id="graus"></h1>
-                        <p id="description"></p>
-                        <p id="city"></p>
-                        <p id="hours"></p>
-                    </div>
-                    <div>
-                        <div class="icon-container"><img class="icons-weather" src="/img/min.png"><p>Mínima:</p><h1 id="min">22°</h1></div>
-                        <div class="icon-container"><img class="icons-weather" src="/img/max.png"><p>Máxima:</p><h1 id="max">22°</h1></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <script src="/js/script.js"></script>
+    <header>
+        <a id="home" href="#home">ClimaBrasil</a>
+        <div>
+            <input id="nameCity" type="text" placeholder="Buscar cidade"><span id="search">Buscar</span>
+        </div>
+    </header>
+    <main>
+        <div class="info">
+            <img src="/img/imgInfo.svg">
+            <h2>Bem vindo ao ClimaBrasil.</h2>
+            <p>Veja como anda o clima na sua cidade,<br>clique em Buscar que traremos as informações fresquinhas para você.</p>
+        </div>
+        <div class="card-weather">
+            
+        </div>
+    </main>        
+   <script src="/js/script.js"></script>
 </body>
 </html>
